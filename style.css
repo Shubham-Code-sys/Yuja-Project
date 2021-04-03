@@ -1,0 +1,150 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif,Arial, Helvetica,'Segoe UI', 'Roboto', 'Open Sans';
+  padding: 0px 20px;
+}
+.nav{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #858585;
+    margin-top: 50px;
+}
+.navlink{
+    color: #858585;
+    font-weight: bold;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+.navlink:hover{
+    color: #4075bf;
+    /* border-bottom: 2px solid #4075bf; */
+    /* padding-bottom: 8px; */
+}
+.active{
+    color: #4075bf;
+    border-bottom: 2px solid #4075bf;
+}
+.active:hover{
+    padding-bottom: 10px;
+}
+.infobox{
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    display: none;
+    padding: 40px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 20px 0px;
+    color: #535353;
+}
+.head img{
+    width: 50px;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+}
+.section1{
+    color: #535353;
+}
+.section1 h4{
+    margin-bottom: 10px;
+}
+.list{
+    margin: 50px 0px;
+}
+.value{
+    color: #39c645;
+    padding: 10px;
+    border: 1px solid #39c645;
+    background-color: rgba(57, 198, 69, 0.1);
+    margin-top: 10px;
+    margin-right:10px;
+}
+.moderate{
+    color: #c63939;
+    padding: 10px;
+    border: 1px solid #c63939;
+    background-color: rgba(198, 57, 57, 0.1);
+    margin-top: 10px;
+    margin-right:10px;
+}
+.sectors{
+    color: #399cc6;
+    padding: 10px;
+    border: 1px solid #399cc6;
+    background-color: rgba(57, 156, 198, 0.1);
+    margin-top: 10px;
+}
+.section2{
+    color: #535353;
+}
+.section3{
+    color: #535353;
+    margin-right: 60px;
+}
+.section3 img{
+    width: 60px;
+}
+.section3 span{
+    color: #4053bf;
+}
+
+/* media queries */
+@media screen and (max-width:800px){
+    .nav {
+        width: 40%;
+        margin-top: 30px
+    }
+    .infobox{
+        margin-bottom: 20px;
+    }
+    .sections{
+        display: block;
+    }
+    .section2{
+        margin: 50px 0px;
+    }
+}
+@media screen and (max-width:445px){
+    .nav {
+        width: 70%;
+        margin-top: 30px;
+    }
+    .infobox{
+        padding: 20px;
+    }
+    .section1 span{
+        display: block;
+        width: fit-content;
+    }
+    .section2{
+        border-top: 1px solid #858585;
+        border-bottom: 1px solid #858585;
+        padding: 50px 0px;
+    }
+}
+@media screen and (max-width:375px){
+    .nav{
+        width: 100%;
+    }
+    .infobox{
+        margin-top: 30px;
+    }
+    .list{
+        margin: 30px 0px;
+    }
+}
